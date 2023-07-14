@@ -38,4 +38,4 @@ if __name__ == "__main__":
     data = get_data(url)
     records = extract_records(data)
     df = record_to_df(records)
-    print(df)
+    pprint(df)
