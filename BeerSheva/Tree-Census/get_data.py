@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import os
 import yaml
+import json
 
 def load_config():
     if os.path.isfile('config.yaml'):
@@ -15,18 +16,31 @@ def load_config():
     return config
 
 
-def get_data(url, resource_id, limit):
+def get_records(base_url, api_uri, resource_id, limit):
+
+    records = list()
     try:
-        url = f"{url}?resource_id={resource_id}&limit={limit}"
+        url = f"{base_url}{api_uri}?resource_id={resource_id}&limit={limit}"
         response = requests.get(url)
         data = response.json()
-        return data
+        counter = 1
+        while len(data['result']['records']) != 0:
+            if response.ok:
+                print(f"running batch {counter}")
+                counter += 1 # increment counter
+                records += data['result']['records']
+            else:
+                print("got invalid response")
+
+            response = requests.get(f'{base_url}{data["result"]["_links"]["next"]}')
+            data = response.json()
+
     except Exception as e:
         print(f"Error occurred: {e}")
         return None
 
-def extract_records(data):
-    return data['result']['records']
+    return records
+
 
 def record_to_df(records):
     df = pd.DataFrame(records)
