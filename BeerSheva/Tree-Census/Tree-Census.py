@@ -3,6 +3,18 @@ import streamlit
 import requests
 import os
 from pprint import pprint
+import yaml
+
+def load_config():
+    if os.path.isfile('config.yaml'):
+        with open('config.yaml', 'r') as stream:
+            try:
+                config = yaml.safe_load(stream)
+            except yaml.YAMLError as exc:
+                print(exc)
+    else:
+        config = {}
+    return config
 
 
 def get_data(url):
