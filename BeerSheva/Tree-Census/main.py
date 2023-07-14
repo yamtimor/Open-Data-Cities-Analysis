@@ -2,7 +2,6 @@ import streamlit
 from get_data import *
 
 
-
 if __name__ == "__main__":
     params = load_config()
     base_url = params.get("base_url","")
