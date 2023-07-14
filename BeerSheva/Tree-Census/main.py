@@ -2,9 +2,13 @@ import streamlit
 from get_data import *
 
 
+
 if __name__ == "__main__":
-    url = "https://data.gov.il/api/3/action/datastore_search?resource_id=b7bfe395-a977-452a-8429-e258b71c5b10&limit=5"
-    data = get_data(url)
+    params = load_config()
+    url = params.get("url","")
+    resource_id = params.get("resource_id","")
+    limit = params.get("limit",0)
+    data = get_data(url,resource_id,limit)
     records = extract_records(data)
     df = record_to_df(records)
     print(df)

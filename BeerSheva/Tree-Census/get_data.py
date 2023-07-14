@@ -15,8 +15,9 @@ def load_config():
     return config
 
 
-def get_data(url):
+def get_data(url, resource_id, limit):
     try:
+        url = f"{url}?resource_id={resource_id}&limit={limit}"
         response = requests.get(url)
         data = response.json()
         return data
