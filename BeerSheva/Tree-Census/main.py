@@ -1,8 +1,7 @@
 import streamlit
 from get_data import *
 
-
-if __name__ == "__main__":
+def main():
     params = load_config()
     base_url = params.get("base_url","")
     api_uri = params.get("api_uri","")
@@ -11,3 +10,7 @@ if __name__ == "__main__":
     records = get_records(base_url,api_uri,resource_id,limit)
     df = record_to_df(records)
     print(df)
+
+
+if __name__ == "__main__":
+    main()
