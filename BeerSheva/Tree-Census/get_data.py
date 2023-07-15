@@ -18,6 +18,15 @@ def load_config():
 
 def get_records(base_url, api_uri, resource_id, limit):
 
+    """
+    Get records from API
+    :param base_url: Base URL of API
+    :param api_uri: URI of API
+    :param resource_id: ID of the resource
+    :param limit: 1000
+    :return: records
+    """
+
     records = list()
     try:
         url = f"{base_url}{api_uri}?resource_id={resource_id}&limit={limit}"
