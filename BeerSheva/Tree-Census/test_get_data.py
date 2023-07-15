@@ -2,6 +2,9 @@ import pytest
 from get_data import *
 
 def test_get_records():
+    """
+    Test the get_records function
+    """
     params = load_config()
     base_url = params.get("base_url", "")
     api_uri = params.get("api_uri", "")
