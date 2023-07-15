@@ -63,7 +63,9 @@ def record_to_df(records):
     """
     if records is None:
         return None
+        print("records is None")
+
     else:
         df = pd.DataFrame(records)
         return df
-
+        print("return dataframe")
