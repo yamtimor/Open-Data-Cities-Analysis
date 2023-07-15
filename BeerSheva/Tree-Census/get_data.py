@@ -5,6 +5,11 @@ import yaml
 import json
 
 def load_config():
+    """
+    Load configuration
+    :return: configuration
+    """
+
     if os.path.isfile('config.yaml'):
         with open('config.yaml', 'r') as stream:
             try:
@@ -17,7 +22,6 @@ def load_config():
 
 
 def get_records(base_url, api_uri, resource_id, limit):
-
     """
     Get records from API
     :param base_url: Base URL of API
@@ -52,6 +56,11 @@ def get_records(base_url, api_uri, resource_id, limit):
 
 
 def record_to_df(records):
+    """
+    Convert records to dataframe
+    :param records: records
+    :return: dataframe
+    """
     df = pd.DataFrame(records)
     return df
 
