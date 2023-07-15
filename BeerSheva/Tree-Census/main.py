@@ -2,6 +2,7 @@ import streamlit
 from get_data import *
 
 def main():
+
     params = load_config()
     base_url = params.get("base_url","")
     api_uri = params.get("api_uri","")
