@@ -14,6 +14,3 @@ def test_get_records():
 
     # Check that the number of unique ids is equal to the number of records(list of json)
     assert len(results) == len(set(record["_id"] for record in results))
-
-
-
