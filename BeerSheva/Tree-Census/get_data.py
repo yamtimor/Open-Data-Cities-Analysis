@@ -61,6 +61,7 @@ def record_to_df(records):
     :param records: records
     :return: dataframe
     """
+
     if records is None:
         return None
         print("records is None")
