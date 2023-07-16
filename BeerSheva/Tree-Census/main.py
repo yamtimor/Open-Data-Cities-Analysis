@@ -3,6 +3,7 @@ from get_data import *
 
 def main():
 
+    # data pipeline
     params = load_config()
     base_url = params.get("base_url","")
     api_uri = params.get("api_uri","")
@@ -11,6 +12,8 @@ def main():
     records = get_records(base_url,api_uri,resource_id,limit)
     df = record_to_df(records)
     print(df)
+
+    # streamlit app
 
 
 if __name__ == "__main__":
