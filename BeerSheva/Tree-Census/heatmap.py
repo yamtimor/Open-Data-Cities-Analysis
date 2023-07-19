@@ -9,7 +9,7 @@ def create_heatmap(data):
     heatmap_layer = HeatMap(data)
 
     # add the layer to the map
-    heatmap_layer.add_to(heatmap_map)
+    heatmap_layer.add_to(heatmap)
 
     # save the map
     heatmap.save('heatmap.html')
