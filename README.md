@@ -36,3 +36,8 @@ git push origin new-branch-name
 8. **Add appropriate title and description:** Ensure your PR title and description include the name of the project and the related city.
 9. **Click on `Create Pull Request`**
 10. **Awsome! You've made a PR to the Open-Data-Cities-Analysis Project! 🚀**
+
+## Contributors
+<a href="https://github.com/yamtimor/Open-Data-Cities-Analysis/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yamtimor/Open-Data-Cities-Analysis" />
+</a>
