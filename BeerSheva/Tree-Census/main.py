@@ -13,6 +13,7 @@ def main():
     df = record_to_df(records)
     print(df)
 
+    # Heatmap
     data = zip(df["lat"].tolist(), df["lon"].tolist())
     create_heatmap(data)
 
