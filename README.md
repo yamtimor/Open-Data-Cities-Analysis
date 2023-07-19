@@ -11,16 +11,28 @@ We warmly welcome users to explore and analyze open data from cities worldwide, 
 ## How To Contribute:
 
 
-1. **Explore the Project:** Familiarize yourself with the project's goals and guidelines.
-2. **Fork the Repository:** Click the "Fork" button on the top right of the repository page.
+1. **Explore the Project**
+2. **Fork the Repository:** Click the `Fork` button on the top right of the repository page.
 3. **Create a New Branch:** On your forked repository, create a new branch using:
-`git checkout -b new-branch-name`
-4. **Make Your Changes:** #change this part
+```
+git checkout -b new-branch-name
+```
+
+4. **Make Your Changes:** Edit/add files and make your desired contributions.
+
+- Each city should have its own folder: Create a new folder with the city's name if it doesn't exist, and avoid duplicating it if it already does.
+
+- Each project should have its own folder inside the city folder: For existing city projects, place your files in the appropriate folder. For new projects in the city, create a new folder with a descriptive title for your project.
+
 5. **Commit Your Changes:**
-`git commit -m "Your commit message"`
+```
+git commit -m "Your commit message"
+```
 6. **Push to Your Fork:**
-`git push origin new-branch-name`
+```
+git push origin new-branch-name
+```
 7. **Submit a Pull Request:** To create a pull request, click on `compare and pull requests`
 8. **Add appropriate title and description:** Ensure your PR title and description include the name of the project and the related city.
 9. **Click on `Create Pull Request`**
-10. **Awsome! You have made a PR to the Open-Data-Cities-Analysis Project! 🚀**
+10. **Awsome!** You have made a PR to the Open-Data-Cities-Analysis Project! 🚀
