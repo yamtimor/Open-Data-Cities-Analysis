@@ -1,5 +1,5 @@
 import pytest
-from get_data import *
+from get_records import *
 
 def test_get_records():
     """

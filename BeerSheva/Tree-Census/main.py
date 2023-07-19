@@ -1,4 +1,4 @@
-from get_data import *
+from get_records import *
 from heatmap import create_heatmap
 
 def main():
@@ -13,8 +13,8 @@ def main():
     df = record_to_df(records)
     print(df)
 
-
-
+    data = zip(df["lat"].tolist(), df["lon"].tolist())
+    create_heatmap(data)
 
 if __name__ == "__main__":
     main()
