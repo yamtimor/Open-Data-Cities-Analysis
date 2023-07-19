@@ -1,7 +1,7 @@
 import folium
 from folium.plugins import HeatMap
 
-def create_heatmap(data):
+def create_heatmap(data, radius=11, blur=20):
     """
     Create a heatmap from a dataframe
     :param data: zipped lat and long series from the dataframe
@@ -12,7 +12,8 @@ def create_heatmap(data):
     heatmap = folium.Map(location=[31.2517, 34.7912], zoom_start=13)
 
     # create a heat map layer
-    heatmap_layer = HeatMap(data)
+    heatmap_layer = HeatMap(data, radius=radius, blur=blur)
+
 
     # add the layer to the map
     heatmap_layer.add_to(heatmap)
