@@ -11,7 +11,7 @@ We warmly welcome users to explore and analyze open data from cities worldwide, 
 ## How To Contribute:
 
 
-1. **Explore the Project**
+1. **Explore the Project:** Familiarize yourself with the project's goals and guidelines.
 2. **Fork the Repository:** Click the `Fork` button on the top right of the repository page.
 3. **Create a New Branch:** On your forked repository, create a new branch using:
 ```
