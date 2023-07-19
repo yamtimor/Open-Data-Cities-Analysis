@@ -35,4 +35,4 @@ git push origin new-branch-name
 7. **Submit a Pull Request:** To create a pull request, click on `compare and pull requests`
 8. **Add appropriate title and description:** Ensure your PR title and description include the name of the project and the related city.
 9. **Click on `Create Pull Request`**
-10. **Awsome! You have made a PR to the Open-Data-Cities-Analysis Project! 🚀**
+10. **Awsome! You've made a PR to the Open-Data-Cities-Analysis Project! 🚀**
