@@ -1,1 +1,2 @@
-https://data.gov.il/dataset/trees-br7
+# Beersheba Trees Heatmap
+This project generates a heatmap to visualize the distribution of trees in Beersheba, Israel, using data from the [Beersheba municipality's Open Data API](https://data.gov.il/dataset/trees-br7). The heatmap provides an interactive representation of tree density across the city, highlighting potential green spaces.
