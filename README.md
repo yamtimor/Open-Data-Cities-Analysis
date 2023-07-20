@@ -10,7 +10,7 @@ We warmly welcome users to explore and analyze open data from cities worldwide, 
 
 ## How to contribute:
 1. **Explore the Project:** Familiarize yourself with the project's goals and guidelines.
-2. **select a city that has an open data portal:** For instance, I've chosen BeerSheba, Israel. If your city (or another city that interests you) has a public data portal, great! Otherwise, if you're looking for a good starting point, New York City has an excellent Open Data Portal, which you can find [here]( https://opendata.cityofnewyork.us/).
+2. **select a city that has an open data portal:** If your city (or another city that interests you) has a public data portal, great! Otherwise, if you're looking for a good starting point, New York City has an excellent Open Data Portal, which you can find [here]( https://opendata.cityofnewyork.us/).
 3. **Find a dataset that catches your interest:**  It's even cooler if there's a public API access instead of dealing with files.
 4. **Fork the Repository:** Click the `Fork` button on the top right of the repository page.
 5. **Create a New Branch:** On your forked repository, create a new branch using:
