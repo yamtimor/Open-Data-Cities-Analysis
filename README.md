@@ -1,3 +1,5 @@
+
+
 # Open Data Cities Analysis 🌍
 
 A community-driven space for exploring **open city datasets** from around the world.  
@@ -13,7 +15,7 @@ We encourage cities to embrace **data transparency**, and we invite contributors
 
 | No | City       | Project | Description | Author |
 | --- | ---------- | ------- | ----------- | ------ |
-| 1  | BeerSheba  | [Beersheba Trees Heatmap](BeerSheba/Beersheba-Trees-Heatmap) | Generates a heatmap of tree distribution using Beersheba's municipal open-data API. | [Yam Timor](https://github.com/yamtimor) |
+| 1  | BeerSheba  | [Beersheba Trees Heatmap](BeerSheba/Beersheba-Trees-Heatmap/README.md) | Generates a heatmap of tree distribution using Beersheba's municipal open-data API. | [Yam Timor](https://github.com/yamtimor) |
 
 ---
 
